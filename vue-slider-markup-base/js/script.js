@@ -47,6 +47,24 @@ createApp({
 ]
 
         }
+    },
+    methods:{
+        nextslide(){
+            if (this.imgActive === this.slides.length -1 ) {
+                this.imgActive = 0;
+                
+            } else {
+                this.imgActive++
+            }
+        },
+        prevslide(){
+            if (this.imgActive === 0) {
+                this.imgActive = this.slides.length -1;
+                
+            } else {
+                this.imgActive--
+            }
+        }
     }
 
 }) .mount('#app')

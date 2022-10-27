@@ -18,10 +18,12 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item" d-for="slides">
-                    <img :src="slides.image" alt="">
+                    <img  :src="slides[imgActive].image" :alt="slides[imgActive].image " />
                     <div class="text">
-                        <h3 class="title" >{{slides.title}}</h3>
-                        <p ></p>
+                        <h3>{{slides[imgActive].title}}</h3>
+                        <p>
+                           {{slides[imgActive].text}}
+                        </p>
                     </div>
                 </div>
 

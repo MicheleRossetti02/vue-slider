@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container">
+            <div class="slider-wrapper" tabindex="0">
+
+                <div class="item" d-for="slides">
+                    <img :src="slides.image" alt="">
+                    <div class="text">
+                        <h3 class="title" >{{slides.title}}</h3>
+                        <p ></p>
+                    </div>
+                </div>
+
+                <div class="thumbs">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="thumb active">
+                        <!-- <img src="img/01.webp" alt="Svezia" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/02.webp" alt="Ratchet & Clank" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/03.webp" alt="Fortnite" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/04.webp" alt="Stray" />
+                    </div>
+                    <div class="thumb">
+                        <img src="img/05.webp" alt="Avengers" /> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
